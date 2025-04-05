@@ -1,0 +1,82 @@
+:root {
+  --font-family: 'Poppins', 
+    sans-serif;
+    --primary-color: #F90;
+    --text-color: #2f281e;
+  }
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  color: #544837;
+  margin: 0;
+  
+  button {
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: white;
+    border: none;
+    padding: 11px 24px;
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+
+  .container {
+    max-width: 1110px;
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-block: 35px;
+  ul {
+    display: flex;
+    gap: 27px;
+    list-style-type: none;
+  }
+
+  .buttons {
+    display: flex;
+    padding-left: 50px;
+  
+    .transparent{
+      background: none;
+      border: 1px solid var(--primary-color);
+      color: #2f281e;
+      border-color: #2f281e;
+      padding-block: 10px;
+    }
+
+    .yellow {
+      margin-left: 10px;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  padding-top: 12px;
+
+  .content {
+    padding-block: 115px;
+
+    h2{
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 123%;
+    }
+  }
+}
