@@ -1,9 +1,9 @@
 :root {
-  --font-family: 'Poppins', 
+  --font-family: 'Poppins',
     sans-serif;
-    --primary-color: #F90;
-    --text-color: #2f281e;
-  }
+  --primary-color: #F90;
+  --text-color: #2f281e;
+}
 
 body {
   font-family: var(--font-family);
@@ -12,7 +12,7 @@ body {
   line-height: 162%;
   color: #544837;
   margin: 0;
-  
+
   button {
     cursor: pointer;
     color: inherit;
@@ -42,26 +42,30 @@ header {
   display: flex;
   align-items: center;
   padding-block: 35px;
-  ul {
-    display: flex;
-    gap: 27px;
-    list-style-type: none;
-  }
+  justify-content: space-between;
 
-  .buttons {
+  .menu {
     display: flex;
-    padding-left: 50px;
-  
-    .transparent{
-      background: none;
-      border: 1px solid var(--primary-color);
-      color: #2f281e;
-      border-color: #2f281e;
-      padding-block: 10px;
+    flex-direction: row;
+
+    ul {
+      display: flex;
+      gap: 27px;
+      list-style-type: none;
     }
 
-    .yellow {
-      margin-left: 10px;
+    .buttons {
+      display: flex;
+      padding-left: 50px;
+      gap: 10px;
+
+      .transparent {
+        background: none;
+        border: 1px solid var(--primary-color);
+        color: #2f281e;
+        border-color: #2f281e;
+        padding-block: 10px;
+      }
     }
   }
 }
@@ -73,10 +77,149 @@ header {
   .content {
     padding-block: 115px;
 
-    h2{
+    h2 {
       font-weight: 700;
       font-size: 44px;
       line-height: 123%;
+    }
+
+    #buttons-hero {
+      margin-left: 53px;
+      display: flex;
+      gap: 14px;
+
+      #video-transparent {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: transparent;
+        color: #F90;
+        padding-block: 10px;
+
+        img {
+          width: 17px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.tools {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding-block: 50px;
+    gap: 20px;
+  }
+}
+
+.design,
+.marketers {
+  margin-top: 200px;
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .image {
+    margin-left: 100px;
+  }
+
+  .marketers-image {
+    position: relative;
+    left: 100px;
+  }
+}
+
+.product {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  .product-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .image {
+    margin-right: 100px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      gap: 30px;
+    }
+
+    .tick {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+footer {
+  margin-top: 100px;
+  padding-top: 100px;
+  border-top: 1px solid #D8D8D8;
+  display: flex;
+  justify-content: space-between;
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    padding-block: 50px;
+    gap: 70px;
+
+    ul {
+      list-style-type: none;
+      font-weight: 400;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    #footer-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 400px;
+      padding-top: 30 px;
+
+      input {
+        padding: 10px 50px;
+        border-radius: 2px;
+        border: 1px solid #D8D8D8;
+      }
+
+      button {
+        margin-top: 15px;
+        width: 33%;
+        font-size: 15px;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 7px;
+      }
     }
   }
 }
